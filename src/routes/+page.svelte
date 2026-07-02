@@ -28,4 +28,10 @@
 			<img src={aboutImg} alt="Bild von einem Weg in einem nebligen Wald" />
 		</div>
 	</section>
+
+	<hr class="border-primary-500 border-2 my-16 rounded-full" />
+
+	<section>
+		<h2 class="h2">Projekte</h2>
+	</section>
 </main>
