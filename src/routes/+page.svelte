@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import heroBackground from '$lib/assets/gray-foggy-forest-md.jpg';
 	import Hero from '$lib/components/Hero.svelte';
 </script>
@@ -17,5 +18,6 @@
 			Informatik. Ich liebe es zu Programmieren oder einfach an irgendwelchen Systemen, wie
 			beispielsweise meine Linux-Systeme zu basteln.
 		</p>
+    <a href={resolve("/about")} class="btn preset-outlined-primary-500">Mehr</a>
 	</section>
 </main>
