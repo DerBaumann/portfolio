@@ -77,7 +77,9 @@
 					</div>
 					<p class="flex-1 max-w-64">{repo.description}</p>
 					<!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-					<a href={repo.link} target="_blank" class="self-end btn preset-outlined-primary-500">Zum Repo <MoveRight class="inline" /></a>
+					<a href={repo.link} target="_blank" class="self-end btn preset-outlined-primary-500">
+						Zum Repo <MoveRight class="inline" />
+					</a>
 				</div>
 			{/each}
 		</div>
