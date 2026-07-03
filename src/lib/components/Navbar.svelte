@@ -18,8 +18,9 @@
 	const { routes, currentPath }: Props = $props();
 </script>
 
-<nav class="sticky top-0 py-4 bg-surface-900 shadow-xl">
-	<ul class="flex justify-center gap-16">
+<nav class="sticky top-0 justify-between py-4 grid grid-cols-3 bg-surface-900 shadow-xl">
+	<a href={resolve('/')} class="btn preset-tonal inline w-fit">Der Baumann</a>
+	<ul class="inline-flex justify-center gap-16">
 		{#each routes as route (route.path)}
 			<li>
 				<a
