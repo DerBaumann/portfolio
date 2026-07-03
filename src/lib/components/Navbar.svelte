@@ -19,6 +19,8 @@
 
 	const { routes, currentPath }: Props = $props();
 
+	// TODO: Cache prefered theme in localStorage
+
 	let isDark = $state(false);
 
 	onMount(() => {
