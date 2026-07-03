@@ -70,7 +70,7 @@
 		<h2 class="h2 mb-8">Projekte</h2>
 		<div class="flex gap-8 flex-wrap">
 			{#each featuresRepos as repo (repo.link)}
-				<div class="card bg-surface-800 flex flex-col gap-8 p-4">
+				<div class="card bg-surface-200 dark:bg-surface-800 flex flex-col gap-8 p-4">
 					<div class="flex justify-between flex-1 gap-8">
 						<h3 class="h3">{repo.name}</h3>
 						<p>{repo.stars} <Star class="inline" /></p>
