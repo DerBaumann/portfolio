@@ -212,3 +212,7 @@
 	--color-surface-contrast-900: var(--color-surface-contrast-light);
 	--color-surface-contrast-950: var(--color-surface-contrast-light);
 }
+
+* {
+	@apply transition-colors duration-500 ease-in-out;
+}

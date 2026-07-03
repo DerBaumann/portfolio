@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
-	import heroBackground from '$lib/assets/gray-foggy-forest-md.jpg';
+	import heroBackground from '$lib/assets/darkroot-garden-2.jpg';
 	import aboutImg from '$lib/assets/forest-path-green-md.jpg';
 	import Hero from '$lib/components/Hero.svelte';
 	import { MoveRight, Star } from '@lucide/svelte';
