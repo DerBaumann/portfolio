@@ -80,7 +80,7 @@
 						{skill.name}:
 						<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
 						{#each Array(5) as _, i (i)}
-							{#if i <= skill.proficiency}
+							{#if i < skill.proficiency}
 								<Coffee class="text-primary-500 size-4 inline-block" />
 							{:else}
 								<Coffee class="inline-block size-4" />
