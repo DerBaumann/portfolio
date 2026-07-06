@@ -1,9 +1,8 @@
-name: Deploy to Github Pages
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches:
-      - "main"
+    branches: 'main'
 
 jobs:
   build_site:
@@ -29,7 +28,7 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/portfolio'
+          BASE_PATH: '/${{ github.event.repository.name }}'
         run: |
           npm run build
 
