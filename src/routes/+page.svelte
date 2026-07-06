@@ -3,7 +3,7 @@
 	import heroBackground from '$lib/assets/darkroot-garden-2.jpg';
 	import aboutImg from '$lib/assets/forest-path-green-md.jpg';
 	import Hero from '$lib/components/Hero.svelte';
-	import { MoveRight, Star } from '@lucide/svelte';
+	import { Coffee, MoveRight, Star } from '@lucide/svelte';
 
 	interface Project {
 		name: string;
@@ -11,6 +11,80 @@
 		stars: number;
 		link: string;
 	}
+
+	/*
+	I have Skills in different Categories.
+	Each Category thus has a List of Skills (and a name of course)
+	Each Skill has a name and a proficiency that goes from one to five stars
+	*/
+
+	type Proficiency = 0 | 1 | 2 | 3 | 4 | 5;
+
+	type Skill = {
+		name: string;
+		proficiency: Proficiency;
+	};
+
+	type Categories = Record<string, Skill[]>;
+
+	const categories = $state<Categories>({
+		Backend: [
+			{
+				name: 'Go',
+				proficiency: 4
+			},
+			{
+				name: 'Typescript',
+				proficiency: 4
+			},
+			{
+				name: 'SQL',
+				proficiency: 3
+			},
+			{
+				name: 'Rust',
+				proficiency: 1
+			}
+		],
+		'Devops / Infra': [
+			{
+				name: 'Linux',
+				proficiency: 4
+			},
+			{
+				name: 'Go',
+				proficiency: 4
+			},
+			{
+				name: 'Docker',
+				proficiency: 3
+			},
+			{
+				name: 'Rust',
+				proficiency: 2
+			}
+		],
+		Frontend: [
+			{
+				name: 'SvelteKit',
+				proficiency: 3
+			},
+			{
+				name: 'Tailwind',
+				proficiency: 3
+			},
+			{
+				name: 'Vue',
+				proficiency: 2
+			}
+		],
+		'Mobile & Desktop': [
+			{
+				name: 'Flutter',
+				proficiency: 2
+			}
+		]
+	});
 
 	const featuresRepos = $state<Project[]>([
 		{
@@ -80,6 +154,35 @@
 					<a href={repo.link} target="_blank" class="self-end btn preset-outlined-primary-500">
 						Zum Repo <MoveRight class="inline" />
 					</a>
+				</div>
+			{/each}
+		</div>
+	</section>
+
+	<hr class="border-primary-500 border-2 my-16 rounded-full" />
+
+	<section>
+		<h2 class="h1 mb-8">Kenntnisse</h2>
+
+		<div class="flex gap-16">
+			{#each Object.entries(categories) as [name, skills] (name)}
+				<div>
+					<h3 class="h3 mb-6 w-max">{name}</h3>
+					<ul class="space-y-4">
+						{#each skills as skill (skill.name)}
+							<li class="w-max">
+								{skill.name}:
+								<!-- eslint-disable-next-line @typescript-eslint/no-unused-vars -->
+								{#each Array(5) as _, i (i)}
+									{#if i <= skill.proficiency}
+										<Coffee class="text-primary-500 size-4 inline-block" />
+									{:else}
+										<Coffee class="inline-block size-4" />
+									{/if}
+								{/each}
+							</li>
+						{/each}
+					</ul>
 				</div>
 			{/each}
 		</div>
