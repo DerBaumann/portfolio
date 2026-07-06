@@ -70,7 +70,7 @@
 	});
 </script>
 
-<div class="flex gap-16">
+<div class="flex flex-wrap gap-16">
 	{#each Object.entries(categories) as [name, skills] (name)}
 		<div>
 			<h3 class="h3 mb-6 w-max">{name}</h3>
