@@ -3,6 +3,7 @@
 	import type { page } from '$app/state';
 	import type { RouteId } from '$app/types';
 	import { Moon, Sun } from '@lucide/svelte';
+	import { onMount } from 'svelte';
 
 	type Path = typeof page.url.pathname;
 
@@ -20,9 +21,20 @@
 
 	let isDark = $state(true);
 
-	$effect(() => {
+	onMount(() => {
+		const storedTheme = localStorage.getItem('theme');
+
+		isDark = storedTheme
+			? storedTheme === 'dark'
+			: window.matchMedia('(prefers-color-scheme: dark)').matches;
 		document.documentElement.classList.toggle('dark', isDark);
 	});
+
+	function toggleTheme() {
+		isDark = !isDark;
+		document.documentElement.classList.toggle('dark', isDark);
+		localStorage.setItem('theme', isDark ? 'dark' : 'light');
+	}
 </script>
 
 <nav
@@ -42,7 +54,7 @@
 		{/each}
 	</ul>
 	<div class="flex justify-end">
-		<button onclick={() => (isDark = !isDark)} class="btn-icon preset-filled-secondary-500">
+		<button onclick={toggleTheme} class="btn-icon preset-filled-secondary-500">
 			{#if isDark}
 				<Moon />
 			{:else}
