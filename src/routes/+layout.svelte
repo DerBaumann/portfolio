@@ -23,12 +23,12 @@
 
 <footer class="flex justify-center w-screen gap-64 bg-surface-100 dark:bg-surface-900 py-8">
 	<ul>
-		<li><a href={resolve('/')}>Home</a></li>
-		<li><a href={resolve('/about')}>Über mich</a></li>
-		<li><a href={resolve('/projects')}>Projekte</a></li>
+		<li><a href={resolve('/')} class="anchor">Home</a></li>
+		<li><a href={resolve('/about')} class="anchor">Über mich</a></li>
+		<li><a href={resolve('/projects')} class="anchor">Projekte</a></li>
 	</ul>
 	<!-- TODO: Icons for socials -->
 	<ul>
-		<li><a href="https://github.com/DerBaumann">https://github.com/DerBaumann</a></li>
+		<li><a href="https://github.com/DerBaumann" class="anchor">Github</a></li>
 	</ul>
 </footer>
