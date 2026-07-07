@@ -21,6 +21,7 @@
 
 {@render children()}
 
+<!-- TODO: Always stick navbar to bottom of page -->
 <footer class="flex justify-center w-screen gap-64 bg-surface-100 dark:bg-surface-900 py-8">
 	<ul>
 		<li><a href={resolve('/')} class="anchor">Home</a></li>
