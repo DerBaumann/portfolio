@@ -19,10 +19,11 @@
 		<div class="space-y-8">
 			<h2 class="h2">Über mich</h2>
 			<p>
-				Ich bin ein Softwareentwickler in Ausbildung im dritten Lehrjahr. Meine Hauptgebiete, in
-				denen ich mich bewege, sind die Webentwicklung und die Entwicklung von kleinen CLI-Tools, um
-				mir den Alltag einfacher zu machen. Ich bin ausserdem ein riesiger Linux-Nerd und kann mich
-				daher auch gut auf Linux-Systemen navigieren.
+				Ich bin ein Softwareentwickler in Ausbildung im dritten Lehrjahr, mit dem Ziel irgendwann
+				selbstständig zu werden. Meine Hauptgebiete, in denen ich mich bewege, sind die
+				Webentwicklung und die Entwicklung von kleinen CLI-Tools, um mir den Alltag einfacher zu
+				machen. Ich bin ausserdem ein riesiger Linux-Nerd und kann mich daher auch gut auf
+				Linux-Systemen navigieren.
 			</p>
 			<a href={resolve('/about')} class="btn preset-outlined-primary-500">Mehr <MoveRight /></a>
 		</div>
