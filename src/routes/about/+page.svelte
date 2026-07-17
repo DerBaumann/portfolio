@@ -1,12 +1,14 @@
 <script lang="ts">
-	import PageTitle from "$lib/components/PageTitle.svelte";
+	import Hero from "$lib/components/Hero.svelte";
+  import heroBackround from "$lib/assets/black-mesa-xen-wallpaper-1.jpg"
+import PageTitle from "$lib/components/PageTitle.svelte";
 </script>
 
 <PageTitle title="Über mich" />
 
-<main class="max-w-6xl mx-auto px-24 py-12 space-y-8">
-	<h1 class="h1">Über mich</h1>
+<Hero background={heroBackround} title="Über mich" />
 
+<main class="max-w-6xl mx-auto px-24 py-12 space-y-8">
 	<section class="space-y-4">
 		<h2 class="h2">Was mache ich und wo helfe ich?</h2>
 		<p>
