@@ -8,7 +8,7 @@
 		link: string;
 	}
 
-	const featuresRepos = $state<Project[]>([
+	const featuresRepos: Project[] = [
 		{
 			name: 'timelog-rs',
 			description: 'A simple rust cli to track your working time. A rewrite of DerBaumann/timelog',
@@ -34,12 +34,13 @@
 			stars: 0,
 			link: 'https://github.com/DerBaumann/portfolio'
 		}
-	]);
+	];
 </script>
 
+<!-- TODO: Grid anstatt Flex -->
 <div class="flex gap-8 flex-wrap">
 	{#each featuresRepos as repo (repo.link)}
-		<div class="card bg-surface-200 dark:bg-surface-800 flex flex-col gap-8 p-4">
+		<div class="card min-w-64 basis-0 bg-surface-200 dark:bg-surface-800 flex flex-col gap-8 p-4">
 			<div class="flex justify-between flex-1 gap-8">
 				<h3 class="h3">{repo.name}</h3>
 				<p>{repo.stars} <Star class="inline" /></p>

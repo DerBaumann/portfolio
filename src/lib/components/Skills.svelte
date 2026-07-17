@@ -10,7 +10,7 @@
 
 	type Categories = Record<string, Skill[]>;
 
-	const categories = $state<Categories>({
+	const categories: Categories = {
 		Backend: [
 			{
 				name: 'Go',
@@ -67,7 +67,7 @@
 				proficiency: 2
 			}
 		]
-	});
+	};
 </script>
 
 <div class="flex flex-wrap gap-16">
