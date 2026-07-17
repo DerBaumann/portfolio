@@ -1,7 +1,7 @@
 <main class="max-w-6xl mx-auto px-24 py-12 space-y-8">
 	<h1 class="h1">Über mich</h1>
 
-	<section>
+	<section class="space-y-4">
 		<h2 class="h2">Was mache ich und wo helfe ich?</h2>
 		<p>
 			Ich bin ein Softwareentwickler in Ausbildung im dritten Lehrjahr mit dem Ziel, irgendwann
@@ -11,7 +11,7 @@
 		</p>
 	</section>
 
-	<section>
+	<section class="space-y-4">
 		<h2 class="h2">Was sind meine Top Skills / Spezialisierungen</h2>
 		<p>
 			Ich habe mittlerweile einen relativ guten Umgang mit Sveltekit. Mein präferiertes Gebiet ist
@@ -35,7 +35,7 @@
 		</p>
 	</section>
 
-	<section>
+	<section class="space-y-4">
 		<h2 class="h2">Was ist mein professioneller Hintergrund</h2>
 		<p>
 			Ich hatte schon früh mit Computer zu tun. Als ich um die 5 Jahre alt war, konnte ich das erste
@@ -62,7 +62,7 @@
 		</p>
 	</section>
 
-	<section>
+	<section class="space-y-4">
 		<h2 class="h2">Was macht mich einzigartig?</h2>
 		<p>
 			Ich würde mich selbst als einen Bastler betiteln. Ich liebe es einfach, irgendwelche Dinge
@@ -72,7 +72,7 @@
 		</p>
 	</section>
 
-	<section>
+	<section class="space-y-4">
 		<h2 class="h2">Persönliche Interessen / Fun Facts</h2>
 		<p>
 			Eines meiner Lieblingshobbys ist das Kochen, da es einem eine riesige Freiheit bereitet, da
