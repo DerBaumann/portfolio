@@ -1,3 +1,9 @@
+<script lang="ts">
+	import PageTitle from "$lib/components/PageTitle.svelte";
+</script>
+
+<PageTitle title="Über mich" />
+
 <main class="max-w-6xl mx-auto px-24 py-12 space-y-8">
 	<h1 class="h1">Über mich</h1>
 

@@ -3,10 +3,13 @@
 	import heroBackground from '$lib/assets/darkroot-garden-2.jpg';
 	import aboutImg from '$lib/assets/forest-path-green-md.jpg';
 	import Hero from '$lib/components/Hero.svelte';
+	import PageTitle from '$lib/components/PageTitle.svelte';
 	import Projects from '$lib/components/Projects.svelte';
 	import Skills from '$lib/components/Skills.svelte';
 	import { MoveRight } from '@lucide/svelte';
 </script>
+
+<PageTitle title="Home" />
 
 <Hero
 	background={heroBackground}
